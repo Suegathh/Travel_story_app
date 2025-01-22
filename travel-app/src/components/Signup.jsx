@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Password from "./password";
 import { useNavigate } from "react-router-dom";
-import { validateEmail } from "../../../backend/utilis/helper";
-import axiosInstance from "../../../backend/utilis/axiosInstance";
+import { validateEmail } from "../utilis/helper";
+import axiosInstance from "../utilis/axiosInstance";
 
 function Signup() {
   const [name, setName] = useState("");

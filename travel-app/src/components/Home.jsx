@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
-import axiosInstance from "../../../backend/utilis/axiosInstance";
+import axiosInstance from "../utilis/axiosInstance";
 import { MdAdd } from "react-icons/md";
 import Modal from "react-modal";
 import TravelStoryCard from "./TravelStoryCard";
@@ -10,7 +10,7 @@ import AddEditTravelStory from "./AddEditTravelStory";
 import ViewTravelStory from "./ViewTravelStory";
 import EmptyCard from "./EmptyCard";
 
-import { getEmptyCardImg, getEmptyCardMessage } from "../../../backend/utilis/helper";
+import { getEmptyCardImg, getEmptyCardMessage } from "../utilis/helper";
 
 function Home() {
   const navigate = useNavigate();

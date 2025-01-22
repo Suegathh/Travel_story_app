@@ -3,10 +3,10 @@ import { MdAdd, MdClose, MdDeleteOutline, MdUpdate } from 'react-icons/md';
 import DateSelector from './DateSelector';
 import ImageSelector from './ImageSelector';
 import TagInput from './TagInput';
-import axiosInstance from '../../../backend/utilis/axiosInstance';
+import axiosInstance from '../utilis/axiosInstance';
 import moment from 'moment';
 import { toast } from 'react-toastify';
-import uploadImage from '../../../backend/utilis/uploadImage';
+import uploadImage from '../utilis/uploadImage';
 
 const AddEditTravelStory = ({
   storyInfo,
