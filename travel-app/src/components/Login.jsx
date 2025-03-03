@@ -35,16 +35,17 @@ function Login() {
         navigate("/dashboard");
       }
     } catch (error) {
-      if (
-        error.response &&
-        error.response.data &&
-        error.response.data.message
-      ) {
-        setError(error.response.data.message);
+      console.error("Login Error Details:", error); // Log the complete error object
+    
+      if (error.response && error.response.data && error.response.data.message) {
+        setError(error.response.data.message); // Display the error message from the backend
+      } else if (error.message) {
+        setError(error.message); // Display general Axios error messages (e.g., network issues)
       } else {
-        setError("An unexpected error occurred, Please try again later!");
+        setError("An unexpected error occurred. Please try again later!");
       }
     }
+    
   };
   
 
